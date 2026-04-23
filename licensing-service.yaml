@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    ddl-auto: none
+    database: postgresql
+    show-sql: true
+  datasource:
+    testWhileIdle: true
+    platform: postgres
+    validationQuery: SELECT 1
+
+management:
+  endpoints:
+    web.exposure.include: "*"
+    enable-by-default: true
